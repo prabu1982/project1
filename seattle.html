@@ -13117,7 +13117,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Using-AirBnB-data-to-understand-the-homeowners--in-Seattle">Using AirBnB data to understand the homeowners  in Seattle<a class="anchor-link" href="#Using-AirBnB-data-to-understand-the-homeowners--in-Seattle">&#182;</a></h1><h3 id="1.-Business-Understanding:">1. Business Understanding:<a class="anchor-link" href="#1.-Business-Understanding:">&#182;</a></h3><h5 id="1.--what-drives-higher-ratings?">1. <a href="#pred-higher-ratings"> what drives higher ratings</a>?<a class="anchor-link" href="#1.--what-drives-higher-ratings?">&#182;</a></h5><p>As a House Owner , i would like to improve my revenue and also need to give a better User experience for my Guest. To do that , i started look in to the historical data like reviews, rating and needs of the Guest and the best time in the year , when the demand will be more for the House.</p>
-<h5 id="2.-The-most-popular-times-of-the-year-for-rentals-of-Seattle-homes?">2. <a href="#popular">The most popular times of the year for rentals of Seattle homes</a>?<a class="anchor-link" href="#2.-The-most-popular-times-of-the-year-for-rentals-of-Seattle-homes?">&#182;</a></h5><p>For the seattle house owner considering renting out a home in AirBnb, it would be helpful, if the House owner able to identify the best time of the year for rentals in the seattle home</p>
+<h5 id="2.-The-most-popular-times-of-the-year-for-rentals-of-Seattle-homes?">2. <a href="#popular">The most popular times of the year for rentals of Seattle homes</a>?<a class="anchor-link" href="#2.-The-most-popular-times-of-the-year-for-rentals-of-Seattle-homes?">&#182;</a></h5><p>Based on the AirBnb statics, it would be great,if the house owner able to identify the popular time of the year when the rentals of Seattle homes having more demand.</p>
 <p>This will help the house owner to plan any work inside the room and also any preparation for the rooms.</p>
 <h5 id="3.--highest-revenue-generating-times-of-the-year-for-Seattle-home-owners?">3. <a href="#revenue"> highest revenue-generating times of the year for Seattle home-owners</a>?<a class="anchor-link" href="#3.--highest-revenue-generating-times-of-the-year-for-Seattle-home-owners?">&#182;</a></h5><p>From the House Owner prespective , it would be great if they can able to get the Idea about the Highest revenue-generating time of the year.</p>
 
@@ -13429,8 +13429,7 @@ dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For the listing dataset, it looks as though there are a number of columns containing missing values. The license column is completely null.</p>
-<p>Looking at the spread of null values, we can see that the average % of null rows in each column is around 10-11%, with 75% of columns having 17% of rows being missing. As I would prefer not to drop columns unnecessarily, I would consider drop columns with more than 30% rows that are null.</p>
+<p>In the listing dataset, some  of columns containing missing values.</p>
 
 </div>
 </div>
@@ -13524,9 +13523,10 @@ dtype: float64</pre>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The reviews dataset has almost no missing values.</p>
 <p>In order to prepare the data for the 3 business questions, we need to look at the 3 datasets and determine which datasets and columns contained within them that are relevant to the question above.</p>
-<p>We have 3 datasets: listings, calendar and reviews. Based on our brief exploration above, we can see that the dataset most relevant to our analysis for this question is the listings dataset. The calendar dataset looks to be more relevant to supplement the listings dataset for our 2nd question on popular times and availability.</p>
-<p>Meanwhile, the reviews dataset is more relevant for qualitative predictors and is mainly unstructured data, hence we will only analyse it if we lack sufficient information to answer our questions.</p>
-<p>After determining the datasets that are relevant for answering our questions, we move to preparing the data for our analysis.</p>
+<p>We have 3 datasets</p>
+<p>Listing    -</p>
+<p>Calendar   - This dataset  witht the listing dataset will help us to determine the popular time of the year</p>
+<p>Reviews  - After get the popluar time of the year, this dataset will help us to identify the guest reviews.</p>
 
 </div>
 </div>
